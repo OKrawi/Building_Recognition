@@ -22,4 +22,4 @@ Best to run in PyCharm.
 
 Make sure to run the `google_panorama.py` first. 
 
-Make sure to download the train images and add them inside the `panoramas/_Train` folder before running the `algorithms.py` file.
+Make sure to download the test images and add them inside the `panoramas/_Test` folder before running the `algorithms.py` file.
