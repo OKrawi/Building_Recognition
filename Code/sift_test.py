@@ -4,17 +4,13 @@ import cv2
 import os
 import sys
 import time
-from scipy.stats import randint
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
+# from scipy.stats import randint
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import RandomizedSearchCV
-from sklearn.metrics import r2_score, mean_squared_error, confusion_matrix, precision_score, recall_score, \
-    accuracy_score, f1_score
-from sklearn.preprocessing import LabelEncoder
+# from sklearn.model_selection import RandomizedSearchCV
+from sklearn.metrics import precision_score, accuracy_score, f1_score
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
-from sklearn.svm import SVC
+from pathlib import Path
 import mahotas
 import warnings
 import ctypes
@@ -24,8 +20,18 @@ warnings.filterwarnings('ignore')
 main_dir = os.path.dirname(sys.path[0])
 
 # location holding the directories with images
-train_images_location = main_dir + '\\panoramas\\Train'
-test_images_location = main_dir + '\\panoramas\\_Test'
+train_images_location = os.path.join(main_dir, 'panoramas\\Train')
+test_images_location = os.path.join(main_dir, 'panoramas\\_Test')
+
+# Check the main directories and exist if either doesn't exist
+train_path = Path(train_images_location)
+test_path = Path(test_images_location)
+
+if not train_path.exists():
+    sys.exit("Train image not available in path: {}".format(train_images_location))
+
+if not test_path.exists():
+    sys.exit("Test image not available in path: {}".format(test_images_location))
 
 # Preparing the dataset
 train_images_paths = []

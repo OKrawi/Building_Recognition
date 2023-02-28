@@ -12,8 +12,19 @@ file = open('../Data/panos.json')
 data = json.load(file)
 file.close()
 
-# Get the main directory
-main_dir = os.path.dirname(sys.path[0]) + '\\panoramas\\Train'
+# Check the train directory and create it if it doesn't exist
+main_dir = os.path.join(os.path.dirname(sys.path[0]), 'panoramas\\Train')
+main_path = Path(main_dir)
+
+if not main_path.exists():
+    os.makedirs(os.path.join(os.path.dirname(sys.path[0]), 'panoramas\\Train'))
+
+# Check the test directory and create it if it doesn't exist
+test_dir = os.path.join(os.path.dirname(sys.path[0]), 'panoramas\\_Test')
+test_path = Path(test_dir)
+
+if not test_path.exists():
+    os.makedirs(os.path.join(os.path.dirname(sys.path[0]), 'panoramas\\_Test'))
 
 # Initialize variables
 progress = 0
