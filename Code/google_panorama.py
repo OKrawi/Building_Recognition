@@ -6,6 +6,7 @@ import numpy as np
 import json
 import time
 from pathlib import Path
+from keys import GOOGLE_MAPS_API_KEY
 
 # Read and load the data
 file = open('../Data/panos.json')
@@ -59,7 +60,7 @@ while current_num_of_files < expected_num_of_files:
                     'location': location,
                     'heading': heading,
                     'pitch': '30',
-                    'key': 'AIzaSyCuNV6FLwCDj05u0V537hhUZd40f-TsSe8'
+                    'key': GOOGLE_MAPS_API_KEY
                 }]
 
                 # Wrap request in a try-except block to watch out for server-related errors
