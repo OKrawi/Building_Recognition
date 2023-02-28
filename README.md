@@ -14,7 +14,7 @@ Get a Google Maps API key from Google.
 
 Create a `keys.py` file and add the following: 
 
-`google_maps_api_key = "YOUR_GOOGLE_MAPS_API_KEY_GOES_HERE"`
+`GOOGLE_MAPS_API_KEY = "YOUR_GOOGLE_MAPS_API_KEY_GOES_HERE"`
 
 ## Run
 
