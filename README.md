@@ -1,6 +1,7 @@
 # Building Recognition
 
 The file `google_panorama.py` creates the required directories and downloads the image from Google Maps API.
+
 The file `algorithms.py` has three algorithms inside. All three are tested against the train and test data available 
 
 ## Setup 
