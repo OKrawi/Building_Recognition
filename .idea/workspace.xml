@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83cc65ed-da9c-4af8-a12d-bc61e8a9f0fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/keys.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/global_features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/raw_pixel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/sift_orb_with_kmeans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/google_panorama.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/google_panorama.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/sift_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/algorithms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/algorithms.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
